@@ -12,8 +12,10 @@ import { UserService } from '../services/user.service'
 
 export class UserListComponent {
 
+  userList: Array<any> = [];
+
   constructor(private _userService: UserService) {
-    this._userService.getUsers();
+    this._userService.getUsers().subscribe(result => this.userList = result);
   }
 
 }
