@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 
 export class HeaderComponent {
-  
+
   private preziBranding = {
     img: '/assets/angular.svg',
     alt: 'Angular logo',

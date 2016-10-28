@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { UserService } from '../services/user.service'
-import { UserInterface } from '../interfaces/user.interface'
+import { UserService } from '../../services/user.service'
+import { UserInterface } from '../../interfaces/user.interface'
 
 @Component({
   selector: 'user-list',

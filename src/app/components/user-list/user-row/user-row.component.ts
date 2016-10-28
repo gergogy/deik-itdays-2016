@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { UserInterface } from '../../interfaces/user.interface'
+import { UserInterface } from '../../../interfaces/user.interface'
 
 @Component({
   selector: 'user-row',
