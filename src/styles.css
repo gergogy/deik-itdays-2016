@@ -28,3 +28,7 @@ user-row {
 user-row:last-child {
   margin-bottom: 0;
 }
+
+home, about, not-found {
+  display: block;
+}
