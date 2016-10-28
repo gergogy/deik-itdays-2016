@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { UserService } from '../../services/user.service'
-import { UserInterface } from '../../interfaces/user.interface'
+import { UserModel } from "../../models/user.model";
 
 @Component({
   selector: 'user-list',
@@ -13,7 +13,7 @@ import { UserInterface } from '../../interfaces/user.interface'
 
 export class UserListComponent {
 
-  userList: Array<UserInterface> = [];
+  userList: Array<UserModel> = [];
 
   constructor(private _userService: UserService) {
     this._userService.getUsers().subscribe(result => this.userList = result);
