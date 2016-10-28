@@ -17,3 +17,14 @@ app-header {
 user-list {
   display: block;
 }
+
+user-row {
+  display: block;
+  padding: 15px;
+  border: 1px solid #cccccc;
+  margin-bottom: 15px;
+}
+
+user-row:last-child {
+  margin-bottom: 0;
+}
