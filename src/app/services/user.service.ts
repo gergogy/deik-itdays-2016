@@ -15,6 +15,12 @@ export class UserService {
   public getUsers = function() {
     return this._http.get(this._baseUrl + 'users')
       .map(response => <UserInterface[]> response.json().data.map(userData => new UserModel(userData)));
-  }
+  };
+
+  public getLoggedIn = function() {
+    return this._http.get(this._baseUrl + 'users/loggedin')
+      .map(response => <UserInterface> response.json().data)
+      .map(userData => new UserModel(userData));
+  };
 
 }

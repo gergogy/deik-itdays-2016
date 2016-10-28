@@ -10,5 +10,11 @@
       <li><a routerLink="users" class="top-menu">Users</a></li>
       <li><a routerLink="about" class="top-menu">About</a></li>
     </ul>
+    <div class="nav navbar-nav navbar-right" *ngIf="loggedInUser !== null">
+      <span class="user-info">{{loggedInUser.username}}</span>
+      <span class="user-avatar">
+        <img [src]="loggedInUser.getFullAvatarUrl()" [alt]="loggedInUser.username">
+      </span>
+    </div>
   </div>
 </nav>
