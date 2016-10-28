@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { UserInterface } from '../../interfaces/user.interface'
 
 @Component({
   selector: 'user-row',
@@ -8,6 +9,6 @@ import { Component, Input } from '@angular/core';
 
 export class UserRowComponent {
 
-  @Input('user-object') userObj = null;
+  @Input('user-object') userObj: UserInterface = null;
 
 }
