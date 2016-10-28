@@ -4,3 +4,16 @@
   font-size: 80px;
 }
 
+app-root {
+  display: block;
+  min-width: 380px;
+  overflow-x: scroll;
+}
+
+app-header {
+  display: block;
+}
+
+user-list {
+  display: block;
+}
