@@ -18,7 +18,8 @@ import { UserRowComponent } from './components/user-list/user-row/user-row.compo
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
+    AppRouting
   ],
   providers: [],
   bootstrap: [AppComponent]
