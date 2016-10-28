@@ -1,11 +1,14 @@
 <div class="media">
   <div class="media-left">
     <a href="#">
-      <img class="media-object" src="http://placehold.it/80x80" alt="User Avatar">
+      <img class="media-object user-avatar" [src]="'/assets/' + userObj.avatar" [alt]="userObj.username">
     </a>
   </div>
   <div class="media-body">
-    <h4 class="media-heading">User name</h4>
+    <h4 class="media-heading">
+      {{userObj.username}} ({{userObj.firstName}} {{userObj.lastName}})
+      <span class="label label-success">{{userObj.userLevel}}</span>
+    </h4>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   </div>
 </div>

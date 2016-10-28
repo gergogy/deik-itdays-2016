@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'user-row',
@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
 })
 
 export class UserRowComponent {
+
+  @Input('user-object') userObj = null;
 
 }

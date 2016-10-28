@@ -3,7 +3,7 @@
     <div class="col-xs-12">
       <h2>User list</h2>
 
-      <user-row></user-row>
+      <user-row *ngFor="let user of userList" [user-object]="user"></user-row>
     </div>
   </div>
 </div>
