@@ -22,3 +22,8 @@ nav h1 {
     display: none;
   }
 }
+
+.top-menu {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
