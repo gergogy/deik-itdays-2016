@@ -6,15 +6,21 @@ import { AppRouting } from './app.routing';
 
 import { AppComponent } from './components/app.component';
 import { HeaderComponent } from './components/header/header.component';
+import { HomeComponent } from './components/home/home.component';
 import { UserListComponent } from './components/user-list/user-list.component';
 import { UserRowComponent } from './components/user-list/user-row/user-row.component';
+import { AboutComponent } from './components/about/about.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
+    HomeComponent,
     UserListComponent,
-    UserRowComponent
+    UserRowComponent,
+    AboutComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
