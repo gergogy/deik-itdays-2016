@@ -1,6 +1,6 @@
 <div class="media">
   <div class="media-left">
-    <a href="#">
+    <a [routerLink]="['/users', userObj.id]">
       <img class="media-object user-avatar" [src]="userObj.getFullAvatarUrl()" [alt]="userObj.username">
     </a>
   </div>
