@@ -2,7 +2,10 @@ import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import { UserInterface } from "../interfaces/user.interface";
 import { UserModel } from "../models/user.model";
+import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/catch';
+import 'rxjs/add/observable/throw';
 
 @Injectable()
 export class UserService {
@@ -25,7 +28,8 @@ export class UserService {
 
   public getUserById = function(id: number) {
     return this._http.get(this._baseUrl + 'user/' + id)
-      .map(response => new UserModel(<UserInterface> response.json().data));
+      .map(response => new UserModel(<UserInterface> response.json().data))
+      .catch((error:any) => Observable.throw(error.json() || 'Server error'));
   };
 
 }
