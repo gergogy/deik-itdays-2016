@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
-import {UserInterface} from "../interfaces/user.interface";
+import { UserInterface } from "../interfaces/user.interface";
 import { UserModel } from "../models/user.model";
 import 'rxjs/add/operator/map';
 
@@ -21,6 +21,11 @@ export class UserService {
     return this._http.get(this._baseUrl + 'users/loggedin')
       .map(response => <UserInterface> response.json().data)
       .map(userData => new UserModel(userData));
+  };
+
+  public getUserById = function(id: number) {
+    return this._http.get(this._baseUrl + 'user/' + id)
+      .map(response => new UserModel(<UserInterface> response.json().data));
   };
 
 }
