@@ -16,5 +16,17 @@
         <img [src]="loggedInUser.getFullAvatarUrl()" [alt]="loggedInUser.username">
       </span>
     </div>
+
+    <div class="nav navbar-nav navbar-right">
+      <div class="input-group search-field-container">
+        <input type="text" class="form-control search-field" aria-label="..." search-field placeholder="Search...">
+        <div class="input-group-btn">
+          <button type="button" class="btn btn-default" aria-label="Help">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
   </div>
 </nav>
