@@ -12,6 +12,7 @@ import { UserRowComponent } from './components/user-list/user-row/user-row.compo
 import { UserDetailsComponent } from './components/user-list/user-details/user-details.component';
 import { AboutComponent } from './components/about/about.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { HighlightDirective } from './directives/highlight.directive';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     UserRowComponent,
     UserDetailsComponent,
     AboutComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
