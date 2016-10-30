@@ -13,6 +13,7 @@ import { UserDetailsComponent } from './components/user-list/user-details/user-d
 import { AboutComponent } from './components/about/about.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { HighlightDirective } from './directives/highlight.directive';
+import { SearchFieldDirective } from './directives/search-field.directive';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HighlightDirective } from './directives/highlight.directive';
     UserDetailsComponent,
     AboutComponent,
     NotFoundComponent,
-    HighlightDirective
+    HighlightDirective,
+    SearchFieldDirective
   ],
   imports: [
     BrowserModule,
