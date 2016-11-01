@@ -1,0 +1,15 @@
+{
+  "name": "preziServer",
+  "main": "server.js",
+  "description": "preziServer",
+  "version": "0.0.1",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "asdasd"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  }
+}

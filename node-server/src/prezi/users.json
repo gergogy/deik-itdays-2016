@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "username": "antalbodnar",
+    "firstName": "Antal",
+    "lastName": "Bodnar",
+    "userLevel": "speaker",
+    "userLevelId": "1",
+    "avatar": "001.jpg",
+    "isDeleted": false
+  },
+  {
+    "id": 2,
+    "username": "doge",
+    "firstName": "Such",
+    "lastName": "Doge",
+    "userLevel": "meme",
+    "userLevelId": "2",
+    "avatar": "002.jpg",
+    "isDeleted": false
+  },
+  {
+    "id": 3,
+    "username": "liana",
+    "firstName": "Overly",
+    "lastName": "Attached GF",
+    "userLevel": "meme",
+    "userLevelId": "2",
+    "avatar": "003.jpg",
+    "isDeleted": false
+  },
+  {
+    "id": 4,
+    "username": "stoner",
+    "firstName": "Stanley",
+    "lastName": "Stoner",
+    "userLevel": "meme",
+    "userLevelId": "2",
+    "avatar": "004.jpg",
+    "isDeleted": false
+  },
+  {
+    "id": 5,
+    "username": "grumpy",
+    "firstName": "Grumpy",
+    "lastName": "Cat",
+    "userLevel": "meme",
+    "userLevelId": "2",
+    "avatar": "005.jpg",
+    "isDeleted": false
+  }
+]
