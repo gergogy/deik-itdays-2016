@@ -1,0 +1,31 @@
+<h2>Data Binding Examples</h2>
+
+<h3>String interpolation</h3>
+<pre class="output">
+  This text is coming from the 'DataBindingComponent.basicString': {{basicString}}
+</pre>
+
+<h3>Property binding</h3>
+<pre class="output">
+  The 'src' and 'alt' attributes are coming from 'DataBindingComponent.property' object
+  <img [src]="property.src" [alt]="property.alt">
+  {{property | json}}
+</pre>
+
+<h3>Event binding</h3>
+<pre class="output">
+  <button type="button" class="btn btn-primary" (click)="onClick()">Click me!</button>
+</pre>
+
+<h3>Class binding</h3>
+<pre class="output">
+  <span class="yellow" [class.red]="red">Yo, I'm {{(red) ? 'red' : 'yellow'}}</span>
+</pre>
+
+<h3>Two way data binding</h3>
+<pre class="output">
+  <input type="text" class="form-control" placeholder="First Name" [(ngModel)]="nameObject.firstName">
+  <input type="text" class="form-control" placeholder="Last Name" [(ngModel)]="nameObject.lastName">
+  {{nameObject | json}}
+</pre>
+

@@ -1,0 +1,13 @@
+.yellow {
+  background: yellow;
+  color: black;
+}
+
+.red {
+  background: red;
+  color: white;
+}
+
+img {
+  width: 150px;
+}
