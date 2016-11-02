@@ -1,6 +1,7 @@
-import { Router, RouterModule } from '@angular/router';
+import {Router, RouterModule, Data} from '@angular/router';
 
 import { HomeComponent } from './components/home/home.component';
+import { DataBindingComponent } from './components/data-binding/data-binding.component';
 import { UserListComponent } from './components/user-list/user-list.component';
 import { UserDetailsComponent } from './components/user-list/user-details/user-details.component';
 import { AboutComponent } from './components/about/about.component';
@@ -10,6 +11,10 @@ export const AppRouting = RouterModule.forRoot([
   {
     path: '',
     component: HomeComponent
+  },
+  {
+    path: 'data-binding',
+    component: DataBindingComponent
   },
   {
     path: 'users',

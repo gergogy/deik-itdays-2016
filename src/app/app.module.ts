@@ -1,11 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppRouting } from './app.routing';
 
 import { AppComponent } from './components/app.component';
 import { HeaderComponent } from './components/header/header.component';
+import { DataBindingComponent } from './components/data-binding/data-binding.component';
 import { HomeComponent } from './components/home/home.component';
 import { UserListComponent } from './components/user-list/user-list.component';
 import { UserRowComponent } from './components/user-list/user-row/user-row.component';
@@ -20,6 +22,7 @@ import { SearchFieldDirective } from './directives/search-field.directive';
     AppComponent,
     HeaderComponent,
     HomeComponent,
+    DataBindingComponent,
     UserListComponent,
     UserRowComponent,
     UserDetailsComponent,
@@ -31,6 +34,7 @@ import { SearchFieldDirective } from './directives/search-field.directive';
   imports: [
     BrowserModule,
     HttpModule,
+    FormsModule,
     AppRouting
   ],
   providers: [],
